@@ -70,7 +70,7 @@ conn.sync({ force: true }).then(async () => {
     console.error(err);
   }
 
-  server.listen(PORT, () => {
+  server.listen(PORT || 3001, () => {
     console.log("%s listening at 3001 - Diets loaded"); // eslint-disable-line no-console
   });
 });
